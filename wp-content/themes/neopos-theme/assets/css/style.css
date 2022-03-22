@@ -327,6 +327,9 @@ section {
   padding: 10px;
   border: 1px white solid;
 }
+.text-contact{
+	padding-top:15%;
+}
 .form-contant{
   position: relative;
   text-align: center;
@@ -1565,7 +1568,21 @@ section {
 .recent-blog-posts .post-box:hover .post-img img {
   transform: rotate(6deg) scale(1.2);
 }
-
+.img-fluid img{
+	min-height:275px;
+}
+.entry-title{
+	-webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+}
+.entry-content{
+	-webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+}
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
@@ -2728,6 +2745,358 @@ section {
 
 /*--------------------------------------------------------------
 # End Product
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Fee Service
+--------------------------------------------------------------*/
+
+
+.service-banner {
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 220px;
+}
+.service-heading {
+    width: 70%;
+    text-align: left;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.service-heading span {
+    color: #BE8221;
+}
+.btn-price {
+    width: 50%;
+    padding: 20px 30px;
+    border-radius: 20px;
+    border-width:2px ;
+    border-style:solid ;
+    font-weight: 700;
+    font-size: 30px;
+    border-color: #52EDC7;
+    background-color: transparent;
+    color: #52EDC7;
+    cursor: pointer;
+}
+
+.service-banner-image img {
+    width: 100%;
+    object-fit: cover;
+}
+ 
+
+.service h3 {
+    text-align: center;
+    font-size: 38px;
+}
+.service-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+   
+}
+.support {
+    border: 2px solid #999999;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    width: 48%;
+    padding: 40px 10px;
+   
+}
+.support p {
+    font-size: 26px;
+    color: #BE8221;
+}
+
+.support-text{
+    color: #BE8221;
+    font-size: 80px;
+    font-weight: 900;
+}
+
+.service-price {
+    font-size: 86px;
+    color: #BE8221;
+}
+
+.service-price img {
+    width: 40px;
+    height: 29px;
+   
+}
+.service-text {
+    color: #308EAA;
+    font-size: 24px;
+    font-weight: 600;
+}
+.limited {
+    font-size: 36px;
+}
+.btn-use {
+    background: linear-gradient(0deg, #BE8221 0%, #FFDB4C 100%);
+    border-radius: 16px;
+    padding: 20px 30px;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+}
+.support-heading {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.btn-feature {
+    background: linear-gradient(0deg, #BE8221 0%, #FFDB4C 100%);
+    border-radius: 16px;
+    padding: 20px 40px;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.feature-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.feature-ul {
+    width: 30%;
+    height: 390px;
+}
+
+.feature-li {
+    margin: 15px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.feature-li span {
+    margin-left: 10px;
+}
+.delivery {
+   border: 2px solid #BE8221;
+   border-radius: 16px;
+   width: 45%;
+   margin: 30px auto;
+   padding: 10px 5px;
+
+}
+
+.delivery h3 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 1.1;
+}
+
+.delivery-item {
+    margin-top: 80px;
+}
+
+
+.image-deli {
+    width: 100%;
+}
+.image-deli img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.delivery-text {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.delivery-text p {
+    width: 60%;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+
+@media only screen and (max-width:1200px){ 
+    .btn-price {
+        padding: 15px 20px;
+        font-size: 25px;
+        margin: 0 auto;
+    }
+    .service-price {
+        font-size: 65px !important;
+    }
+    .feature-ul {
+        height: 440px;
+    }
+}
+
+@media only screen and (max-width:992px){ 
+    .btn-price {
+        width: 60% !important;
+        padding: 15px 20px;
+        font-size: 20px;
+        margin: 0 auto;
+    }
+    .service-price {
+        font-size: 65px;
+        color: #BE8221;
+    }
+    
+    .service-price img {
+        width: 38px;
+        height: 27px;
+       
+    }
+    .limited {
+        font-size: 18px !important;
+    }
+    .service-text {
+        font-size: 18px;
+    }
+    .service-box {
+        flex-direction: column;
+    }
+    .support {
+        width: 70%;
+        height: 650px;
+        gap: 30px;
+        padding: 10px 10px !important;
+    }
+
+    .feature-ul {
+        height: 490px;
+    }
+}
+
+@media only screen and (max-width: 786px) {
+    .btn-price {
+        width: 60% !important;
+        padding: 12px 10px !important;
+        font-size: 20px !important;
+        margin: 0 auto;
+    }
+    .service-box {
+        flex-direction: column;
+    }
+    .support {
+        width: 70%;
+        height: 650px;
+        gap: 30px;
+        padding: 10px 10px !important;
+    }
+    
+    .feature-ul {
+        width: 30%;
+        height: 660px;
+    }
+    .delivery h3 {
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .delivery {
+        width: 90%;
+    }
+    .delivery-item {
+        margin-bottom: 100px;
+        margin-top: 100px;
+    }
+
+}
+
+@media only screen and (max-width:586px){ 
+    .service-heading {
+        font-size: 20px;
+    }
+    .btn-price {
+        width: 70% !important;
+        padding: 2px 5px !important;
+        font-size: 16px !important;
+        margin: 0 auto;
+    }
+
+
+    .service h3 {
+        font-size: 20px;
+    }
+    .service-box {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .support {
+        width: 90%;
+        gap: 30px;
+        padding: 0 10px;
+    }
+    .service-price {
+        font-size: 50px !important;
+    }
+    .service-price img {
+        width: 30px;
+        height: 19px;       
+    }
+    .service-text {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+
+    .feature h3 {
+        font-size: 16px;
+        text-align: center;
+    }
+    .btn-feature {
+        padding: 15px 30px;
+        text-align: center;
+    }
+    .feature-item {
+        flex-direction: column;
+        justify-content: start;
+        margin-top:10px;
+        align-items: center;
+    }
+    .feature-ul {
+        width: 90%;
+        height: auto;
+    }
+    .delivery h3 {
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .delivery {
+        width: 90%;
+    }
+    .delivery-item {
+        margin-bottom: 100px;
+        margin-top: 100px;
+    }
+    .delivery-text {
+       margin: 0 auto;
+       font-size: 14px;
+    }
+}
+
+/*--------------------------------------------------------------
+# End Fee Service
 --------------------------------------------------------------*/
 
 
