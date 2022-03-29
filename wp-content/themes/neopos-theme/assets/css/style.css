@@ -2755,6 +2755,7 @@ section {
 .service-banner {
    justify-content: center;
    align-items: center;
+   margin-bottom: 220px;
 }
 .service-heading {
     width: 70%;
