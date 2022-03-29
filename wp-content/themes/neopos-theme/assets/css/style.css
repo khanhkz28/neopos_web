@@ -2424,7 +2424,20 @@ section {
   border-radius: 1rem;
   background-color: #fff;
 }
-
+.content-img1 {
+	display: flex;
+	position: absolute;
+     left: 5%;
+    top: 5%;
+    height: 85%;
+    background: #0000009e;
+    color: white;
+    width: 90%;
+}
+.content-img1 p {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
 .content-img p {
   font-size: 1.125rem;
   font-weight: 600;
@@ -2795,7 +2808,7 @@ section {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 40px;
+	flex-direction:column;
    
 }
 .support {
